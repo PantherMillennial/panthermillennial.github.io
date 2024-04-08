@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1a1a1a, #333);
+    background-color: #040011; /* Cor de fundo ajustada */
     color: white;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 .popup {
-    background: rgba(255, 255, 255, 0.05);
+    background: #04000f;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -86,7 +86,7 @@ h1 {
     margin-right: 10px;
 }
 .button:hover {
-    background-color: #6a0080; /* Alterado para um tom mais escuro de roxo */
+    background-color: #040011; /* Alterado para um tom mais escuro de roxo */
 }
 </style>
 </head>
@@ -94,8 +94,14 @@ h1 {
 <div class="popup">
 <div class="container">
 <h1>Você que ganhar dinheiro? se sim clique okey, se não saia daqui imediatamente, não queremos mente fraca aqui!</h1>
-<a href="v1" class="button">Okey</a>
+<img src="image/img.png" alt="Imagem" style="max-width: 100%; margin-bottom: 15px;"> <!-- Adicionando a imagem -->
+<button class="button" onclick="redirectToPage()">Okey</button>
 </div>
 </div>
+<script>
+function redirectToPage() {
+    window.location.href = "outra_pagina.html"; // Altere para o nome da sua página HTML
+}
+</script>
 </body>
 </html>
