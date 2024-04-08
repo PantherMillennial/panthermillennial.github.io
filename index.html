@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedido Enviado</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1a1a1a, #333);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.popup {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+.popup::before,
+.popup::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 20px;
+    border: 2px solid purple; /* Alterado para roxo */
+    z-index: -1;
+    animation: neonBorder 1.5s infinite alternate;
+}
+.popup::before {
+    top: -5px;
+    left: -5px;
+    animation-delay: 0s;
+}
+.popup::after {
+    bottom: -5px;
+    right: -5px;
+    animation-delay: 0.75s;
+}
+@keyframes neonBorder {
+    0% {
+        opacity: 0;
+        box-shadow: 0 0 5px purple; /* Alterado para roxo */
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 15px purple; /* Alterado para roxo */
+    }
+    100% {
+        opacity: 0;
+        box-shadow: 0 0 5px purple; /* Alterado para roxo */
+    }
+}
+.container {
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.button {
+    background-color: purple; /* Alterado para roxo */
+    color: #ffffff; /* Texto branco */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+.button:hover {
+    background-color: #6a0080; /* Alterado para um tom mais escuro de roxo */
+}
+</style>
+</head>
+<body>
+<div class="popup">
+<div class="container">
+<h1>Você que ganhar dinheiro? se sim clique okey, se não saia daqui imediatamente, não queremos mente fraca aqui!</h1>
+<a href="v1" class="button">Okey</a>
+</div>
+</div>
+</body>
+</html>
