@@ -20,7 +20,7 @@ body {
 /* Header */
 .header {
     background-color: #0b012b; /* Cor de fundo do cabeçalho */
-    padding: 20px 0;
+    padding: 40px 0; /* Aumenta o espaço interno do cabeçalho */
 }
 
 .logo {
@@ -28,7 +28,7 @@ body {
 }
 
 .logo-image {
-    width: 250px; /* Aumenta o tamanho da imagem */
+    width: 400px; /* Aumenta o tamanho da imagem */
     height: auto;
     display: block; /* Para centralizar a imagem horizontalmente */
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
@@ -52,9 +52,16 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 3rem; /* Aumenta o tamanho do título */
     font-weight: bold;
     margin-bottom: 20px;
+    animation: pulse 2s infinite; /* Animação pulsante */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 .description {
@@ -66,12 +73,16 @@ body {
     color: #fff;
 }
 
+.section-2 .description {
+    margin-bottom: 40px;
+}
+
 .section-3 {
     background-color: #040011; /* Cor de fundo da terceira seção */
     color: #fff;
 }
 
-.question {
+.section-3 .question {
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -82,6 +93,10 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+.footer .copyright {
+    font-size: 0.8rem; /* Reduz o tamanho do texto de direitos autorais */
 }
 
 .btn {
