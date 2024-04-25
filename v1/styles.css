@@ -65,7 +65,8 @@ body {
 }
 
 .description {
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Reduz o espaço entre os textos */
+    font-size: 1rem; /* Reduz o tamanho do texto */
 }
 
 .section-2 {
@@ -74,7 +75,8 @@ body {
 }
 
 .section-2 .description {
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Reduz o espaço entre os textos */
+    font-size: 1rem; /* Reduz o tamanho do texto */
 }
 
 .section-3 {
@@ -85,6 +87,7 @@ body {
 .section-3 .question {
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 1.2rem; /* Ajusta o tamanho do texto */
 }
 
 /* Footer */
@@ -101,11 +104,12 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Aumenta o padding do botão */
     background-color: #452b9a; /* Cor de fundo do botão */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1rem; /* Ajusta o tamanho do texto do botão */
 }
 
 .btn:hover {
