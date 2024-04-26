@@ -20,7 +20,7 @@ body {
 /* Header */
 .header {
     background-color: #0b012b; /* Cor de fundo do cabeçalho */
-    padding: 40px 0; /* Aumenta o espaço interno do cabeçalho */
+    padding: 20px 0;
 }
 
 .logo {
@@ -28,7 +28,7 @@ body {
 }
 
 .logo-image {
-    width: 400px; /* Aumenta o tamanho da imagem */
+    width: 250px; /* Aumenta o tamanho da imagem */
     height: auto;
     display: block; /* Para centralizar a imagem horizontalmente */
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
@@ -52,21 +52,13 @@ body {
 }
 
 .title {
-    font-size: 3rem; /* Aumenta o tamanho do título */
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    animation: pulse 2s infinite; /* Animação pulsante */
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
 }
 
 .description {
-    margin-bottom: 20px; /* Reduz o espaço entre os textos */
-    font-size: 1rem; /* Reduz o tamanho do texto */
+    margin-bottom: 40px;
 }
 
 .section-2 {
@@ -74,20 +66,14 @@ body {
     color: #fff;
 }
 
-.section-2 .description {
-    margin-bottom: 20px; /* Reduz o espaço entre os textos */
-    font-size: 1rem; /* Reduz o tamanho do texto */
-}
-
 .section-3 {
     background-color: #040011; /* Cor de fundo da terceira seção */
     color: #fff;
 }
 
-.section-3 .question {
+.question {
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 1.2rem; /* Ajusta o tamanho do texto */
 }
 
 /* Footer */
@@ -98,20 +84,38 @@ body {
     padding: 20px 0;
 }
 
-.footer .copyright {
-    font-size: 0.8rem; /* Reduz o tamanho do texto de direitos autorais */
-}
-
 .btn {
     display: inline-block;
-    padding: 15px 30px; /* Aumenta o padding do botão */
+    padding: 10px 20px;
     background-color: #452b9a; /* Cor de fundo do botão */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem; /* Ajusta o tamanho do texto do botão */
 }
 
 .btn:hover {
     background-color: #6a4eb5; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilos para a animação dos comentários */
+.comments {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comments li {
+    color: #fff;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Cores da página de comentários */
+.section-4 {
+    background-color: #452b9a; /* Cor de fundo da quarta seção (comentários) */
+    color: #fff; /* Cor do texto dos comentários */
 }
